@@ -385,3 +385,63 @@ remote:
 To https://github.com/zstanfelFerit/RUAP.git
  * [new branch]      Dev -> Dev
 branch 'Dev' set up to track 'origin/Dev'.
+
+
+_______________________________________
+
+
+c:\Dev\GitTest\RUAP>git pull https://github.com/zstanfelFerit/RUAP.git Dev
+From https://github.com/zstanfelFerit/RUAP
+ * branch            Dev        -> FETCH_HEAD
+Removed obj files
+
+Tryying to get rid of files that should be ignored
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch Dev
+# Your branch is up to date with 'origin/Dev'.
+#
+# Changes to be committed:
+#       new file:   ruapApp/.vs/ruapApp/DesignTimeBuild/.dtbcache.v2
+#       modified:   ruapApp/.vs/ruapApp/v16/.suo
+#       deleted:    ruapApp/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+#       deleted:    ruapApp/obj/Debug/netcoreapp3.1/ruapApp.AssemblyInfo.cs
+#       deleted:    ruapApp/obj/Debug/netcoreapp3.1/ruapApp.AssemblyInfoInputs.cache
+#       deleted:    ruapApp/obj/Debug/netcoreapp3.1/ruapApp.GeneratedMSBuildEditorConfig.editorconfig
+#       deleted:    ruapApp/obj/Debug/netcoreapp3.1/ruapApp.assets.cache
+#       deleted:    ruapApp/obj/Debug/netcoreapp3.1/ruapApp.csproj.AssemblyReference.cache
+#       deleted:    ruapApp/obj/project.assets.json
+#       deleted:    ruapApp/obj/project.nuget.cache
+#       deleted:    ruapApp/obj/ruapApp.csproj.nuget.dgspec.json
+#       deleted:    ruapApp/obj/ruapApp.csproj.nuget.g.props
+#       deleted:    ruapApp/obj/ruapApp.csproj.nuget.g.targets
+#
+~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            ~                                                                                                                                                                                                                                            C:/Dev/GitTest/RUAP/.git/COMMIT_EDITMSG[+] [unix] (20:22 30/10/2023)                                                                                                                                                                4,0-1 All[Dev 0f36199] Removed obj files
+ 13 files changed, 226 deletions(-)
+ create mode 100644 ruapApp/.vs/ruapApp/DesignTimeBuild/.dtbcache.v2
+ delete mode 100644 ruapApp/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+ delete mode 100644 ruapApp/obj/Debug/netcoreapp3.1/ruapApp.AssemblyInfo.cs
+ delete mode 100644 ruapApp/obj/Debug/netcoreapp3.1/ruapApp.AssemblyInfoInputs.cache
+ delete mode 100644 ruapApp/obj/Debug/netcoreapp3.1/ruapApp.GeneratedMSBuildEditorConfig.editorconfig
+ delete mode 100644 ruapApp/obj/Debug/netcoreapp3.1/ruapApp.assets.cache
+ delete mode 100644 ruapApp/obj/Debug/netcoreapp3.1/ruapApp.csproj.AssemblyReference.cache
+ delete mode 100644 ruapApp/obj/project.assets.json
+ delete mode 100644 ruapApp/obj/project.nuget.cache
+ delete mode 100644 ruapApp/obj/ruapApp.csproj.nuget.dgspec.json
+ delete mode 100644 ruapApp/obj/ruapApp.csproj.nuget.g.props
+ delete mode 100644 ruapApp/obj/ruapApp.csproj.nuget.g.targets
+
+c:\Dev\GitTest\RUAP>git push
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 2.02 KiB | 517.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/zstanfelFerit/RUAP.git
+   ebe89a5..0f36199  Dev -> Dev
+
+c:\Dev\GitTest\RUAP>
