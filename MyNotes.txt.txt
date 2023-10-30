@@ -445,3 +445,50 @@ To https://github.com/zstanfelFerit/RUAP.git
    ebe89a5..0f36199  Dev -> Dev
 
 c:\Dev\GitTest\RUAP>
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+c:\Dev\GitTest\RUAP>git cherry-pick 0f361995305e56412413d1c272b601332e0089bc
+[master 8501b57] Removed obj files
+ Date: Mon Oct 30 20:22:47 2023 +0100
+ 4 files changed, 31 deletions(-)
+ delete mode 100644 ruapApp/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+ delete mode 100644 ruapApp/obj/Debug/netcoreapp3.1/ruapApp.AssemblyInfo.cs
+ delete mode 100644 ruapApp/obj/Debug/netcoreapp3.1/ruapApp.AssemblyInfoInputs.cache
+ delete mode 100644 ruapApp/obj/Debug/netcoreapp3.1/ruapApp.GeneratedMSBuildEditorConfig.editorconfig
+
+c:\Dev\GitTest\RUAP>git commit
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+c:\Dev\GitTest\RUAP>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 330 bytes | 330.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/zstanfelFerit/RUAP.git
+   ecc60d2..8501b57  master -> master
+
+c:\Dev\GitTest\RUAP>git log --pretty=oneline --graph
+* 8501b57858b6659c34202f3a97442f679de61fd3 (HEAD -> master, origin/master, origin/HEAD) Removed obj files
+*   ecc60d2a8181ab05a22b748ebaebd36978366bb4 Merge branch 'Dev'
+|\
+| * e7ef2a190203452ec0ab3e53c66606cd2af71df6 (origin/Dev, Dev) Removed gitignore.txt
+| * 4107653d855aed1e23715bd39a2092d5bbd01569 New log
+| * 0f361995305e56412413d1c272b601332e0089bc Removed obj files
+| *   ebe89a527ee5a30537f5cfe97e76ea1e63df1235 Merge branch 'Dev' of https://github.com/zstanfelFerit/RUAP into Dev
+| |\
+| | * eb09a56c1a9ec86c25f64b28eaaa250cdf1df2f0 Second Commit
+| | * 67dd10db92409ba5a6eefa1f60bf43ef7103be1a Adding file
+| * | dcc4058a20acf0b177c41b6b4aa5b05cff4ed19f test 2
+| * | 09cf8bb345c95bbf788b35249ca14385dd0b40ba ruapApp\.vs Upated gitignore
+| * | 23b63dfe2f37736cff01e9512ac1eab508ed8fbf VS code
+| |/
+* / dc0b19c98a8dff225855e953a5b0b6255a562022 Added folder
+|/
+* 13387a656c56d77c0924b2baa697a4ba8baadd08 Initial Commit
