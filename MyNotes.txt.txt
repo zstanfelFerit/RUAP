@@ -1,1 +1,387 @@
 //This is where my nores will be
+
+C:\Git\Repo>git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in C:/Git/Repo/.git/
+
+C:\Git\Repo>git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch> master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Git\Repo>git clone [-b [BRANCH-NAME]] [REPO] [PATH]
+fatal: Too many arguments.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --reject-shallow      don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch> checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --also-filter-submodules
+                          apply partial clone filters to submodules
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+    --bundle-uri <uri>    a URI for downloading bundles before fetching from origin remote
+
+
+C:\Git\Repo>git clone https://github.com/zstanfelFerit/RUAP.git
+Cloning into 'RUAP'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+C:\Git\Repo>git branch
+
+C:\Git\Repo>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        RUAP/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Git\Repo>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 7EBD-7C01
+
+ Directory of C:\Git\Repo
+
+10/30/2023  11:37 AM    <DIR>          .
+10/30/2023  11:37 AM    <DIR>          ..
+10/30/2023  11:37 AM    <DIR>          RUAP
+               0 File(s)              0 bytes
+               3 Dir(s)  114,067,341,312 bytes free
+
+C:\Git\Repo>cd ruap
+
+C:\Git\Repo\RUAP>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 7EBD-7C01
+
+ Directory of C:\Git\Repo\RUAP
+
+10/30/2023  11:37 AM    <DIR>          .
+10/30/2023  11:37 AM    <DIR>          ..
+10/30/2023  11:37 AM                20 ReadMe.md
+               1 File(s)             20 bytes
+               2 Dir(s)  114,067,550,208 bytes free
+
+C:\Git\Repo\RUAP>git init
+Reinitialized existing Git repository in C:/Git/Repo/RUAP/.git/
+
+C:\Git\Repo\RUAP>git clone -b Main https://github.com/zstanfelFerit/RUAP.git \LV1
+Cloning into '\LV1'...
+fatal: Remote branch Main not found in upstream origin
+
+C:\Git\Repo\RUAP>git clone -b master  https://github.com/zstanfelFerit/RUAP.git \LV1
+Cloning into '\LV1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+C:\Git\Repo\RUAP>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 7EBD-7C01
+
+ Directory of C:\Git\Repo\RUAP
+
+10/30/2023  11:49 AM    <DIR>          .
+10/30/2023  11:49 AM    <DIR>          ..
+10/30/2023  11:49 AM    <DIR>          LV1
+               0 File(s)              0 bytes
+               3 Dir(s)  113,509,781,504 bytes free
+
+C:\Git\Repo\RUAP>cd Lv1
+
+C:\Git\Repo\RUAP\LV1>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 7EBD-7C01
+
+ Directory of C:\Git\Repo\RUAP\LV1
+
+10/30/2023  11:49 AM    <DIR>          .
+10/30/2023  11:49 AM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  113,509,781,504 bytes free
+
+C:\Git\Repo\RUAP\LV1>
+C:\Git\Repo\RUAP\LV1>git clone -b master  https://github.com/zstanfelFerit/RUAP.git C:\GIT\Repo\LV1
+Cloning into 'C:\GIT\Repo\LV1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+C:\Git\Repo\RUAP\LV1>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 7EBD-7C01
+
+ Directory of C:\Git\Repo\RUAP\LV1
+
+10/30/2023  11:49 AM    <DIR>          .
+10/30/2023  11:49 AM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  113,509,142,528 bytes free
+
+C:\Git\Repo\RUAP\LV1>cd ..
+
+C:\Git\Repo\RUAP>cd ..
+
+C:\Git\Repo>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 7EBD-7C01
+
+ Directory of C:\Git\Repo
+
+10/30/2023  11:55 AM    <DIR>          .
+10/30/2023  11:55 AM    <DIR>          ..
+10/30/2023  11:55 AM    <DIR>          LV1
+               0 File(s)              0 bytes
+               3 Dir(s)  113,511,772,160 bytes free
+
+C:\Git\Repo>cd lv1
+
+C:\Git\Repo\LV1>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 7EBD-7C01
+
+ Directory of C:\Git\Repo\LV1
+
+10/30/2023  11:55 AM    <DIR>          .
+10/30/2023  11:55 AM    <DIR>          ..
+10/30/2023  11:55 AM                 0 .gitignore.txt
+10/30/2023  11:53 AM                20 ReadMe.md
+               2 File(s)             20 bytes
+               2 Dir(s)  113,511,993,344 bytes free
+
+C:\Git\Repo\LV1>git branch -b Dev
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    --omit-empty          do not output a newline after empty formatted refs
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --show-current        show current branch name
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --recurse-submodules  recurse through submodules
+    --format <format>     format to use for the output
+
+
+C:\Git\Repo\LV1>gut branch Dev
+'gut' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Git\Repo\LV1>git branch Dev
+
+C:\Git\Repo\LV1>gits status
+'gits' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Git\Repo\LV1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Git\Repo\LV1>git Status Dev
+git: 'Status' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+C:\Git\Repo\LV1>git status Dev
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Git\Repo\LV1>git checkout Dev
+Switched to branch 'Dev'
+
+C:\Git\Repo\LV1>git status
+On branch Dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Git\Repo\LV1>git status
+On branch Dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+        MyNotes.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Git\Repo\LV1>git add MyNotes
+fatal: pathspec 'MyNotes' did not match any files
+
+C:\Git\Repo\LV1>git add MyNotes.txt.txt
+
+C:\Git\Repo\LV1>gir status
+'gir' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Git\Repo\LV1>git status
+On branch Dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   MyNotes.txt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+
+
+C:\Git\Repo\LV1>git commit
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'zstanfel@zstanfel.(none)')
+
+C:\Git\Repo\LV1>git config --global user.email "zeljko.stanfel@ferit.hr
+
+C:\Git\Repo\LV1>git config --global user.email "zeljko.stanfel@ferit.hr"
+
+C:\Git\Repo\LV1>git config --global user.name "zstanfelFerit"
+
+C:\Git\Repo\LV1>git commit
+[Dev 67dd10d] Adding file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 MyNotes.txt.txt
+
+C:\Git\Repo\LV1>git push
+fatal: The current branch Dev has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Dev
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Git\Repo\LV1>git push --set-upstream origin Dev
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 335 bytes | 335.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Dev' on GitHub by visiting:
+remote:      https://github.com/zstanfelFerit/RUAP/pull/new/Dev
+remote:
+To https://github.com/zstanfelFerit/RUAP.git
+ * [new branch]      Dev -> Dev
+branch 'Dev' set up to track 'origin/Dev'.
