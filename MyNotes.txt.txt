@@ -447,3 +447,19 @@ To https://github.com/zstanfelFerit/RUAP.git
 c:\Dev\GitTest\RUAP>
 
 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
+
+
+C:\Users\student\repo\RUAP>git remote -v
+origin  https://github.com/zstanfelFerit/RUAP.git (fetch)
+origin  https://github.com/zstanfelFerit/RUAP.git (push)
+
+C:\Users\student\repo\RUAP>git remote set-url origin/master https:\\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@github.com/zstanfelFerit/RUAP.git
+fatal: No such remote 'origin/master'
+
+C:\Users\student\repo\RUAP>git remote set-url origin https:\\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@github.com/zstanfelFerit/RUAP.git
+
+C:\Users\student\repo\RUAP>git remote -v
+origin  https:\\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@github.com/zstanfelFerit/RUAP.git (fetch)
+origin  https:\\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@github.com/zstanfelFerit/RUAP.git (push)
+
+C:\Users\student\repo\RUAP>
