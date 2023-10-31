@@ -389,7 +389,7 @@ branch 'Dev' set up to track 'origin/Dev'.
 
 _______________________________________
 
-
+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
 c:\Dev\GitTest\RUAP>git pull https://github.com/zstanfelFerit/RUAP.git Dev
 From https://github.com/zstanfelFerit/RUAP
  * branch            Dev        -> FETCH_HEAD
@@ -445,3 +445,5 @@ To https://github.com/zstanfelFerit/RUAP.git
    ebe89a5..0f36199  Dev -> Dev
 
 c:\Dev\GitTest\RUAP>
+
+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
